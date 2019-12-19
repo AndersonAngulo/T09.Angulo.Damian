@@ -56,3 +56,14 @@ def producto(a, b, c):
     if (c == 0):
         return (a * b)
     return(a*b*c)
+
+#funcion 7
+def division_entera(a,b):
+    a_invalido=(a % b!=0 or b>a)
+    while(a_invalido==True):
+        a=int(input("Ingrese valor de a:"))
+        a_invalido = (a % b!=0 or b>a)
+    return(a/b)
+
+#funcion 8
+def
