@@ -66,4 +66,12 @@ def division_entera(a,b):
     return(a/b)
 
 #funcion 8
-def
+def charla(nombre,lugar):
+    print("Hola",nombre)
+    print("Como estas?")
+    animo=input().lower()
+    if(animo=="bien"):
+        print("Que bueno que estes",animo)
+    if (animo=="mal"):
+        print("Espero te encuntres mejor")
+    print("Te diriges a ",lugar,"\nQue te vaya muy bien")
