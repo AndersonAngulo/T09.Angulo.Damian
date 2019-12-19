@@ -32,3 +32,10 @@ def promedio_notas(a,b,c):
         c = int(input("ingrese nota 3(0-20):"))
         c_invalido = (c < 0 or c > 20)
     return ((a+b+c)/3)
+
+#funcion5
+def resta_positiva(a,b):
+    if(a>b) :
+     return (a-b)
+    if (b>a):
+     return (b-a)
