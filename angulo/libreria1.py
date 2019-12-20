@@ -107,3 +107,11 @@ def placa(numero):
         numero = input("Ingrese numero de placa(1234-abc) :")
         numero_invalido = numero[0:4].isdigit() == False or numero[5:8].isdigit() == True or len(numero)!=8
     return(numero)
+#funcion 13
+def descuento(precio,descuento):
+    descuento_invalido=float(descuento)>=100
+    while(descuento_invalido==True):
+        descuento=input("Ingrese descuento(.%):")
+        descuento_invalido =float( descuento) >= 100
+    precio_final=precio-(precio*(float(descuento)/100))
+    return float(precio_final)
