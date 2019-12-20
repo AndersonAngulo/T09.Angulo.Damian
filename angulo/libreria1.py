@@ -115,3 +115,11 @@ def descuento(precio,descuento):
         descuento_invalido =float( descuento) >= 100
     precio_final=precio-(precio*(float(descuento)/100))
     return float(precio_final)
+#funcion 14
+def aumento(precio,aumento):
+    aumento_invalido=float(aumento)>=100
+    while(aumento_invalido==True):
+        aumento=input("Ingrese aumento(.%):")
+        aumento_invalido =float( aumento) >= 100
+    precio_final=precio-(precio*(float(aumento)/100))
+    return float(precio_final)
