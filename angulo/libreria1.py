@@ -75,3 +75,21 @@ def charla(nombre,lugar):
     if (animo=="mal"):
         print("Espero te encuntres mejor")
     print("Te diriges a ",lugar,"\nQue te vaya muy bien")
+#funcion9
+def ruc(numero):
+    numero_invalido = (len(numero) != 11 or numero.isdigit() == False)
+    while(numero_invalido==True):
+        numero=input("Ingrese numero de RUC:")
+        numero_invalido = (len(numero) != 11 or numero.isdigit() == False)
+    return (numero)
+#funcion 10
+def numero_celular(cel):
+    cel_invalido = (len(cel) != 9 and len(cel) != 6 or cel.isdigit() == False)
+    while (cel_invalido == True):
+        cel = input("Ingrese numero de celular y/o telefono:")
+        cel_invalido = (len(cel) != 9 and len(cel) != 6 or cel.isdigit() == False)
+    if(len(cel)==9):
+        print("ingresaste un numero celular")
+    if (len(cel) == 6):
+        print("ingresaste un numero telefonico")
+    return (cel)
