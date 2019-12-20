@@ -123,3 +123,7 @@ def aumento(precio,aumento):
         aumento_invalido =float( aumento) >= 100
     precio_final=precio-(precio*(float(aumento)/100))
     return float(precio_final)
+#funcion 15
+def area_triangulo(a,b):
+    area=(a*b)/2
+    return(area)
