@@ -100,3 +100,10 @@ def numero_telefonico(tel):
     if(len(tel)==9):
         print("Tu numero de telefono es:")
     return (tel)
+#funcion 12
+def placa(numero):
+    numero_invalido=numero[0:4].isdigit()==False or numero[5:8].isdigit()==True or len(numero)!=8
+    while (numero_invalido == True):
+        numero = input("Ingrese numero de placa(1234-abc) :")
+        numero_invalido = numero[0:4].isdigit() == False or numero[5:8].isdigit() == True or len(numero)!=8
+    return(numero)
