@@ -126,4 +126,30 @@ def aumento(precio,aumento):
 #funcion 15
 def area_triangulo(a,b):
     area=(a*b)/2
+    print("El area del triangulo es:")
+    return(area)
+#funcion 16
+def area_rectangulo(a,b):
+    area=(a*b)
+    print("El area del rectangulo es:")
+    return(area)
+#funcion 17
+def area_trapecio(a,b,h):
+    area=((a+b)/2)*h
+    print("El area del trapecio es:")
+    return(area)
+#funcion 18
+def area_cuadrado(a):
+    area=(a*a)
+    print("El area del cuadrado es:")
+    return(area)
+#funcion 19
+def area_rombo(a,b):
+    area=(a*a)
+    print("El area del rombo es:")
+    return(area)
+#funcion 20
+def area_cuadrado(radio):
+    area=(a*a)
+    print("El area del circulo es:")
     return(area)
