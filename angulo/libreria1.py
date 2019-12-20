@@ -84,12 +84,19 @@ def ruc(numero):
     return (numero)
 #funcion 10
 def numero_celular(cel):
-    cel_invalido = (len(cel) != 9 and len(cel) != 6 or cel.isdigit() == False)
+    cel_invalido = (len(cel) != 9 or cel.startswith("9")==False or cel.isdigit() == False)
     while (cel_invalido == True):
-        cel = input("Ingrese numero de celular y/o telefono:")
-        cel_invalido = (len(cel) != 9 and len(cel) != 6 or cel.isdigit() == False)
+        cel = input("Ingrese numero de celular :")
+        cel_invalido = (len(cel) != 9 or cel.startswith("9") == False or cel.isdigit() == False)
     if(len(cel)==9):
-        print("ingresaste un numero celular")
-    if (len(cel) == 6):
-        print("ingresaste un numero telefonico")
+        print("Tu numero de celular es:")
     return (cel)
+#funcion 11
+def numero_telefonico(tel):
+    tel_invalido = (len(tel) != 6  or tel.isdigit() == False)
+    while (tel_invalido == True):
+        tel = input("Ingrese numero de celular :")
+        tel_invalido = (len(tel) != 6 or tel.isdigit() == False)
+    if(len(tel)==9):
+        print("Tu numero de telefono es:")
+    return (tel)
